@@ -1,0 +1,217 @@
+#aboutus{
+  padding: 50px 0;
+}
+
+.aboutus__title {
+  margin-bottom: 20px;
+}
+
+.aboutus__text {
+  max-width: 1235px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.aboutus__bottom {
+  display: flex;
+  gap: 32px;
+}
+
+.aboutus__bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 868px;
+  width: 100%;
+  border-radius: 34px;
+  background-image: url('../img/worcker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus__left-description {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.50);
+  color: #fff;
+  border-radius: 34px;
+  padding: 50px;
+}
+
+.aboutus__left-text {
+  width: 433px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  margin-right: auto;
+  align-items: center;
+}
+
+.aboutus__button-wraper {
+  display: flex;
+  align-items: center;
+}
+
+.aboutus__left-button {
+  border: 3px solid var(--orange);
+  border-radius: 16px;
+  padding: 17px 35px;
+  color: #fff;
+  font-weight: 700;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.aboutus__left-button:hover,
+.aboutus__left-button:focus-visible{
+  background-color: var(--light-orange);
+  border: 3px solid var(--light-orange);
+  outline: 0;
+}
+
+.aboutus__left-button:active {
+  background-color: var(--darck-orang);
+  border: 3px solid var(--darck-orang);
+}
+
+.boutus__card-text {
+  max-width: 450px;
+  width: 100%;
+}
+
+
+.aboutus__bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.aboutus__bottom-card {
+  padding: 65px 120px 65px 60px;
+  display: flex;
+  gap: 50px;
+  border-radius: 34px;
+  border: 1px solid #CACACA;
+}
+
+.aboutus__card-text {
+  width: 450px;
+}
+
+@media (max-width: 1280px){
+  #aboutus{
+    padding: 35px 0;
+  }
+  .aboutus__text{
+    max-width: 924px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .aboutus__bottom {
+   flex-wrap: wrap;
+  }
+  .aboutus__bottom-left{
+    padding-top: 448px;
+  }
+  .aboutus__bottom-left {
+    max-width: 924px;
+    width: 100%;
+  }
+  .aboutus__bottom-card {
+    padding: 65px 155px 65px 77px;
+    gap: 50px;
+  }
+  .aboutus__bottom-right{
+    gap: 30px;
+  }
+}
+
+@media (max-width: 962px){
+  .aboutus__bottom-left{
+    padding-top: 454px;
+
+  }
+
+  .aboutus__bottom-card {
+    padding: 35px 48px 35px 39px;
+    gap: 15px;
+  }
+
+  .aboutus__left-description {
+    padding: 34px 40px;
+  }
+
+  .aboutus__left-text{
+    width: 366px;
+  }
+}
+
+@media (max-width: 767px) {
+  #aboutus{
+    padding: 58px 0;
+  }
+  .aboutus__title{
+    font-size: 24px;
+  }
+  .aboutus__text{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+  .aboutus__bottom-left {
+    padding-top: 0;
+    background-size: 0;
+  }
+  .aboutus__bottom-left::before {
+    content: "";
+    width: 100%;
+    padding-top: calc(200 / 290 * 100%);
+    margin-bottom: 8px;
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/worcker.jpg');
+  }
+  .aboutus__left-description{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .aboutus__left-text{
+    font-weight: 400;
+    max-width: 290px;
+    width: 100%;
+    margin-bottom: 12px;
+    line-height: 28px;
+    margin-right: auto;
+  }
+  .aboutus__card-text{
+    width: 290px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .aboutus__card-title{
+    width: 290px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .aboutus__left-button {
+    padding: 10px 41px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--orange);
+  }
+  .aboutus__bottom-card {
+    flex-wrap: wrap;
+    border: none;
+    gap: 13px;
+    padding: 0;
+  }
+  .aboutus__card-img{
+    width: 64px;
+    height: 49px;
+  }
+}
